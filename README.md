@@ -1,2 +1,5 @@
-# practice.c
-basic to advance C practice
+#include <stdio.h>
+int main (void){
+printf("Hellm world");
+}
+return 0;
