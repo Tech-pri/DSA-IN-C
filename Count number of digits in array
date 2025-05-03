@@ -1,0 +1,16 @@
+/* count number of digita in an array*/
+#include <stdio.h>
+
+int main() {
+int i,n,c=0;
+int a[10]={10,3456,65678392,895673};
+for (i=0;i<10;i++){
+    n=a[i];
+    while(n!=0){
+        c++;
+        n=n/10;
+    }
+}
+printf("The number of digits in the array is %d",c);
+    return 0;
+}
