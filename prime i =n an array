@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int a[10] = {10, 3, 5, 67, 34, 98, 34, 19, 70};
+    int i, j, n, isPrime;
+
+    for (i = 0; i < 10; i++) {
+        n = a[i];
+        isPrime = 1;  
+
+        if (n <= 1) {
+            isPrime = 0; 
+        } else {
+            for (j = 2; j <= n / 2; j++) {
+                if (n % j == 0) {  
+                    isPrime = 0;
+                    break;  // Exit early if divisible
+                }
+            }
+        }
+
+        if (isPrime) {
+            printf("%d is prime\n", n);
+        } else {
+            printf("%d is not prime\n", n);
+        }
+    }
+
+    return 0;
+}
