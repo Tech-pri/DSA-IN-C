@@ -1,0 +1,23 @@
+/*selection sort*/
+
+#include <stdio.h>
+
+int main()
+{
+  int a[10]={12,56,67,94,34,2,37,74,59,71};
+  int i, k,z;
+  for (i=0;i<10-1;i++){
+      for(k=i+1;k<10;k++){
+          if(a[i]>a[k]){
+              z=a[i];
+              a[i]=a[k];
+              a[k]=z;
+          }
+      }
+  }
+  for(i=0;i<10;i++){
+  printf("  %d  ",a[i]);
+  }
+
+    return 0;
+}
